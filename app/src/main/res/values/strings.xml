@@ -17,4 +17,6 @@
     <string name="mag_NoFind">找不到</string>
     <string name="msg_NoNetwork">沒網路</string>
     <string name="tvTitle">PetInformation</string>
+    <string name="msg_InsertSuccess">成功</string>
+    <string name="msg_InsertFail">失敗</string>
 </resources>

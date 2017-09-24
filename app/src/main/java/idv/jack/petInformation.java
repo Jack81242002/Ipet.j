@@ -21,7 +21,6 @@ public class petInformation extends Fragment {
         View view = inflater.inflate(R.layout.fragment_petinformation, container, false);
         cs = (Case) getArguments().getSerializable("cs");
 
-
         petName = (TextView) view.findViewById(R.id.petName);
         petColor = (TextView) view.findViewById(R.id.petColor);
         petAge = (TextView) view.findViewById(R.id.petAge);
@@ -42,7 +41,7 @@ public class petInformation extends Fragment {
         petTnr.setText(cs.getTNR());
         petIc.setText(cs.getPetIc());
         petPosition.setText(cs.getPetPosition());
-        petSex.setText(cs.getPetSex());
+        petSex.setText(cs.getPetSex(petSex));
 
 
     }

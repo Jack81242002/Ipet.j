@@ -6,15 +6,113 @@
     android:background="@color/colorPrimary"
     android:orientation="vertical"
     tools:context="idv.jack.ApdoInsert">
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+</ScrollView>
 
-    <Spinner
-        android:id="@+id/sp"
+
+
+
+    <EditText
+        android:id="@+id/edpetname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="請輸入寵物名稱"
+        android:maxLength="10" />
+
+    <EditText
+        android:id="@+id/edpetage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="請輸入寵物年紀"
+        android:maxLength="2" />
+
+    <EditText
+        android:id="@+id/edpetcolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="請輸入寵物顏色"
+        android:maxLength="5" />
+<RadioGroup
+    android:id="@+id/rdsex"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <RadioButton
+        android:id="@+id/rdman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="男" />
+    <RadioButton
+        android:id="@+id/rdgirl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/btSearch"
-        android:layout_marginLeft="10dp"
-        android:layout_toLeftOf="@+id/btSearch"
-        android:layout_toRightOf="@+id/tvCategory" />
+        android:text="女"/>
+</RadioGroup>
 
+    <RadioGroup
+        android:id="@+id/rdsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="小" />
+        <RadioButton
+            android:id="@+id/rdm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中"/>
+        <RadioButton
+            android:id="@+id/rdl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大"/>
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/rdpetic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rdpeticy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="有" />
+        <RadioButton
+            android:id="@+id/rdpeticn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="沒有"/>
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/rdtnr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rdtnry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="有" />
+        <RadioButton
+            android:id="@+id/rdtnrn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="沒有"/>
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btFinishInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btCancel"
+        android:onClick="onFinishInsertClick"
+        android:text="新增" />
 
 </LinearLayout>
